@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply drop-shadow-md hover:drop-shadow-lg;
+}
+
+.screenBreakPoint {
+  @apply w-full md:w-[768px] lg:w-[1024px] xl:w-[1280px];
+}
+
+.redBtn {
+  @apply sm:px-3 py-[2px] px-1 sm:py-1 border-2 border-red-400 text-red-400 hover:bg-red-400 hover:text-white font-semibold sm:font-bold;
+}
+
+.badge {
+  @apply w-5 h-5 sm:w-6 sm:h-6 rounded-full absolute -top-[25%] -right-[25%] sm:-top-[40%] sm:-right-[40%] bg-black text-white  text-xs justify-center font-bold items-center;
+}
+
+.btn {
+  @apply p-1  text-sm  sm:px-2 sm:font-semibold  hover:text-blue-500 transition-colors duration-500;
+}
+.hr {
+  @apply h-[2px] w-0 transition-all  duration-300 bg-blue-500;
+}
+
+.input{
+  @apply outline-none w-full px-2 placeholder:text-gray-300 py-3 border border-gray-300 rounded-md ;
+}
